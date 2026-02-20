@@ -96,7 +96,7 @@ export const App = () => {
   const [steps, setSteps] = useState<'init' | 'tariff'>('init');
   const [selectedTariff, setSelectedTariff] = useState<string>('');
 
-  const income = (YOUR_PART / 100) * ((selectedTab.replace('%', '') as unknown as number) / 100) * SUM_HUNDLE;
+  const income = ((selectedTab.replace('%', '') as unknown as number) / 100) * SUM_HUNDLE;
   const netIncome = income * (YOUR_PART / 100);
 
   useEffect(() => {
