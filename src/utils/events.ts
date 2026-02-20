@@ -23,7 +23,7 @@ export const sendDataToGA = async (payload: Payload) => {
       {
         redirect: 'follow',
         method: 'POST',
-        body: JSON.stringify({ datetime: date, ...payload, variant: '7204_4', user_id: LS.getItem(LSKeys.UserId, 0) }),
+        body: JSON.stringify({ datetime: date, ...payload, variant: '7204_6', user_id: LS.getItem(LSKeys.UserId, 0) }),
         headers: {
           'Content-Type': 'text/plain;charset=utf-8',
         },
