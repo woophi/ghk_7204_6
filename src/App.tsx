@@ -154,7 +154,7 @@ const tariffs = [
     participationCost: 2_000,
     additionalPayment: '18 000 ₽',
     percent: 80,
-    tariff: 'Доступен после успешного отбора',
+    tariff: 'Доступен после испытания',
   },
   {
     title: 'Alfa Trader',
@@ -163,7 +163,7 @@ const tariffs = [
     participationCost: 2_000,
     additionalPayment: '98 000 ₽',
     percent: 90,
-    tariff: 'Доступен после успешного отбора',
+    tariff: 'Доступен после испытания',
   },
 ];
 
@@ -613,7 +613,7 @@ export const App = () => {
             <SwiperSlide key={tariff.title} style={{ maxWidth: '90%' }}>
               <div className={appSt.calcBanner()} style={{ gap: '1rem' }}>
                 <div>
-                  <Status view="contrast" color={tariff.tariff === 'Базовый тариф' ? 'green' : 'teal'} size={20}>
+                  <Status view="contrast" color={tariff.tariff === 'Базовый тариф' ? 'green' : 'grey'} size={20}>
                     <Typography.Text view="secondary-small" weight="medium" style={{ textTransform: 'uppercase' }}>
                       {tariff.tariff}
                     </Typography.Text>
